@@ -90,3 +90,21 @@ body {
     background-color: black;
     transform: rotate(45deg);
 }
+
+.bayan__content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.bayan__checkbox:checked~.bayan__content {
+    max-height: 25rem;
+}
+
+.bayan__item .bayan__content {
+    transition: all .6s ease;
+}
+
+.bayan__item:hover~.bayan__content {
+    transition: all .3s ease-in;
+    overflow: hidden;
+}
