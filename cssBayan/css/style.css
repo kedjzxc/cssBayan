@@ -72,3 +72,21 @@ body {
 .bayan__checkbox-label::after {
     transform: translate(0.125rem, 0) rotate(-90deg);
 }
+
+.bayan__checkbox:checked+.bayan__checkbox-label {
+    color: black;
+}
+
+.bayan__checkbox-label::before, .bayan__checkbox-label::after {
+    transition: all .3s ease-in-out;
+}
+
+.bayan__checkbox:checked+.bayan__checkbox-label::after {
+    background-color: black;
+    transform: rotate(-45deg);
+}
+
+.bayan__checkbox:checked+.bayan__checkbox-label::before {
+    background-color: black;
+    transform: rotate(45deg);
+}
