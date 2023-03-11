@@ -126,6 +126,10 @@ body {
     .bayan__title {
         font-size: 1.825rem;
     }
+    html {
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+      }
 }
 
 @media (min-width: 1920px) {
