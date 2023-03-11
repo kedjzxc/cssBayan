@@ -108,3 +108,44 @@ body {
     transition: all .3s ease-in;
     overflow: hidden;
 }
+
+@media (min-width: 320px) {
+    .bayan__checkbox-label {
+        font-size: 1.825rem;
+    }
+    .bayan__title {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 820px) {
+    .bayan__checkbox-label {
+        font-size: 1.625rem;
+    }
+    .bayan__title {
+        font-size: 1.825rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .bayan__checkbox-label {
+        font-size: 1.25rem;
+    }
+    .bayan__title {
+        font-size: 1.5rem;
+    }
+    .bayan__item:hover .bayan__checkbox-label::after {
+        background-color: black;
+        transform: rotate(-45deg);
+    }
+    .bayan__item:hover .bayan__checkbox-label {
+        color: black;
+    }   
+    .bayan__item:hover .bayan__checkbox-label::before {
+        background-color: black;
+        transform: rotate(45deg);
+    }
+    .bayan__item:hover .bayan__content {
+        max-height: 25rem;
+    }
+}
