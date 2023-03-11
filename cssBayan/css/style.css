@@ -41,3 +41,34 @@ body {
     border-top: 0.063rem solid grey;
     transition: all 3s ease-in-out;
 }
+
+.bayan__checkbox-label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: blue;
+    padding: 1.25rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bayan__checkbox-label::after,
+.bayan__checkbox-label::before {
+    content: "";
+    width: 0.25rem;
+    height: 1.125rem;
+    background-color: blue;
+    margin-right: 0.625rem;
+    position: absolute;
+    right: 0;
+}
+
+.bayan__checkbox-label::before {
+    transform: translate(0.125rem, 0) rotate(180deg);
+}
+
+.bayan__checkbox-label::after {
+    transform: translate(0.125rem, 0) rotate(-90deg);
+}
